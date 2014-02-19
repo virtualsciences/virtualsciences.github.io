@@ -24,6 +24,16 @@ label {
     color: #34495e;
 }
 
+a {
+  color: #005922;
+}
+a:hover,
+a:focus {
+  background: none;
+  border: none;
+  color: #7EBC35;
+}
+
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
@@ -71,7 +81,7 @@ label {
  * I want my pure-button elements to look a little different
  */
 .pure-button {
-    background-color: #1f8dd6;
+    background-color: #7EBC35;
     color: white;
     padding: 0.5em 2em;
     border-radius: 5px;
@@ -79,7 +89,7 @@ label {
 
 a.pure-button-primary {
     background: white;
-    color: #1f8dd6;
+    color: #7EBC35;
     border-radius: 5px;
     font-size: 120%;
 }
@@ -96,7 +106,7 @@ a.pure-button-primary {
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
 }
 .home-menu.pure-menu-open {
-    background: #2d3e50;
+    background: #005922;
 }
 .pure-menu.pure-menu-open.pure-menu-fixed {
     /* Fixed menus normally have a border at the bottom. */
@@ -116,13 +126,13 @@ a.pure-button-primary {
 }
 
 .home-menu a {
-    color: #6FBEF3;
+    color: #ccc;
 }
 .home-menu li a:hover,
 .home-menu li a:focus {
     background: none;
     border: none;
-    color: #AECFE5;
+    color: #fff;
 }
 
 
@@ -132,7 +142,7 @@ a.pure-button-primary {
  */
 
 .splash-container {
-    background: #1f8dd6;
+    background: #7EBC35;
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
@@ -159,11 +169,10 @@ a.pure-button-primary {
     font-size: 20px;
     font-weight: bold;
     color: white;
-    border: 3px solid white;
-    padding: 1em 1.6em;
     font-weight: 100;
-    border-radius: 5px;
     line-height: 1em;
+    margin-top: 0;
+    padding: 0;
 }
 
 /* This is the subheading that appears on the blue section */
@@ -203,7 +212,7 @@ a.pure-button-primary {
 
 /* This is the class used for the content sub-headers (<h3>) */
 .content-subhead {
-    color: #1f8dd6;
+    color: #7EBC35;
 }
     .content-subhead i {
         margin-right: 7px;
@@ -211,13 +220,23 @@ a.pure-button-primary {
 
 /* This is the class used for the dark-background areas. */
 .ribbon {
-    background: #2d3e50;
+    background: #005922;
     color: #aaa;
 }
 
 /* This is the class used for the footer */
 .footer {
     background: #111;
+}
+
+.footer a {
+  color: #999;
+}
+.footer a:hover,
+.footer a:focus {
+  background: none;
+  border: none;
+  color: #ccc;
 }
 
 /*
@@ -236,6 +255,11 @@ a.pure-button-primary {
         padding: 1em;
     }
 
+    .content > * {
+      max-width: 66em;
+      margin-right: auto;
+      margin-left: auto;
+    }
     /* We can align the menu header to the left, but float the
     menu items to the right. */
     .home-menu {
