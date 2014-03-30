@@ -1,3 +1,48 @@
+Create a new CMaaS project
+==========================
+Below the steps for starting a new CMaaS project are descibed. The tkh cmaas site is used as an example.
+
+Create project directory
+------------------------
+$ mkdir tkh
+$ cd tkh
+
+Get the necessary files
+-----------------------
+$ wget http://downloads.buildout.org/2/bootstrap.py
+$ wget http://virtualsciences.github.io/cmaas/buildout.cfg
+$ wget http://virtualsciences.github.io/cmaas/production.cfg
+$ wget http://virtualsciences.github.io/cmaas/testing.cfg
+$ wget http://virtualsciences.github.io/cmaas/settings.cfg
+
+Set up necessary structure
+--------------------------
+$ mkdir src
+$ cd src
+
+Create the theme product
+------------------------
+$ paster create -t plone3_theme cmaas.tkh
+
+Selected and implied templates:
+  ZopeSkel#basic_namespace  A basic Python project with a namespace package
+  ZopeSkel#plone            A project for Plone add-ons
+  ZopeSkel#plone3_theme     A theme for Plone 3
+
+Variables:
+  egg:      cmaas.tkh
+  package:  cmaastkh
+  project:  cmaas.tkh
+Expert Mode? (What question mode would you like? (easy/expert/all)?) ['easy']: expert
+Namespace Package Name (Name of outer namespace package) ['cmaas']:
+Package Name (Name of the inner namespace package) ['tkh']:
+Skin Name (Name of the theme (human facing, added to portal_skins)) ['']: TKH
+Skin Base (Name of the theme from which this is copied) ['Plone Default']: CMaaS
+Empty Styles? (Override default public stylesheets with empty ones?) [False]:
+Include Documentation? (Include in-line documentation in generated code?) [True]:
+Version (Version number for project) ['1.0']: 0.1
+Description (One-line description of the project) ['An installable theme for Plone 3']: TKH CMaaS
+
 Plone update
 ============
 When the Plone moves up a version, create a copy of the latest branch and pin 
