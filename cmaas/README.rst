@@ -43,6 +43,22 @@ Include Documentation? (Include in-line documentation in generated code?) [True]
 Version (Version number for project) ['1.0']: 0.1
 Description (One-line description of the project) ['An installable theme for Plone 3']: TKH CMaaS
 
+or in one go:
+
+$ paster create -t plone3_theme cmaas.test \
+                   expert_mode=easy \
+                   skinbase=CMaaS \
+                   skinname=Test \
+                   include_doc=False \
+                   version=0.1 \
+                   url=http://virtualsciences.github.io/cmaas \
+                   keywords='web zope plone cmaas' \
+                   description='Test CMaaS' \
+                   author=THijs \
+                   author_email=thijs.jonkman@virtualsciences.nl \
+                   empty_styles=False \
+                   include_doc=False
+
 Plone update
 ============
 When the Plone moves up a version, create a copy of the latest branch and pin 
